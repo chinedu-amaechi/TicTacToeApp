@@ -1,6 +1,6 @@
 // src/screens/GameScreen.js
 import React, { useState } from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import Board from '../components/Board';
 import calculateWinner from '../utils/calculateWinner';
 import styles from './styles/GameScreenStyles';
@@ -46,7 +46,9 @@ const GameScreen = ({ navigation }) => {
         <Text style={styles.playerX}>X</Text>
         <Text style={styles.playerO}>O</Text>
       </View>
-      <Button title="Restart Game" onPress={restartGame} />
+      <TouchableOpacity style={styles.restartButton} onPress={restartGame}>
+        <Text style={styles.buttonText}>Restart Game</Text>
+      </TouchableOpacity>
     </View>
   );
 };

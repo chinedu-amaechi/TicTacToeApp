@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#FFF920', // Yellow background
+    backgroundColor: '#FFF920', // Light beige background color
   },
   title: {
     fontSize: 32,
@@ -16,8 +16,8 @@ const styles = StyleSheet.create({
   },
   players: {
     flexDirection: 'row',
-    justifyContent: 'space-around',
-    width: '60%',
+    justifyContent: 'space-between',
+    width: '20%', // Adjusted width to bring PlayerO and PlayerX closer
     marginTop: 20,
   },
   playerX: {
@@ -35,6 +35,18 @@ const styles = StyleSheet.create({
     backgroundColor: '#333',
     padding: 10,
     borderRadius: 5,
+  },
+  restartButton: {
+    backgroundColor: '#333',
+    paddingVertical: 15,
+    paddingHorizontal: 30,
+    borderRadius: 10,
+    marginTop: 20,
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 18,
+    fontWeight: 'bold',
   },
 });
 
