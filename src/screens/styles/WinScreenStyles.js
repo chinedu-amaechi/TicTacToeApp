@@ -7,6 +7,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+ 
+  trophy: { 
+    width: 100,
+    height: 100,
+    marginBottom: 20,
+  },
+  
   title: {
     fontSize: 24,
     fontWeight: 'bold',
