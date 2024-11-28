@@ -1,3 +1,4 @@
+// src/components/styles/BoardStyles.js
 import { StyleSheet } from 'react-native';
 
 

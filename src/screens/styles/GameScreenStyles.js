@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#FFF920', // Light beige background color
+    backgroundColor: '#F5F5DC', // Light beige background color
   },
   title: {
     fontSize: 32,
