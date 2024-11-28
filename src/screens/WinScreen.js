@@ -1,6 +1,6 @@
 // src/screens/WinScreen.js
 import React from 'react';
-import { View, Text, Image, Button } from 'react-native';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
 import styles from './styles/WinScreenStyles';
 
 const WinScreen = ({ route, navigation }) => (
@@ -8,10 +8,12 @@ const WinScreen = ({ route, navigation }) => (
     <Image source={require('../../assets/trophy.png')} style={styles.trophy} />
     <Text style={styles.title}>Congratulations!</Text>
     <Text style={styles.title}>Winner: {route.params.winner}</Text>
-    <Button
-      title="Play Again"
-      onPress={() => navigation.navigate('Game')}
-    />
+    <TouchableOpacity
+      style={styles.button}
+      onPress={() => navigation.navigate('SelectPlayer')}
+    >
+      <Text style={styles.buttonText}>Play Again</Text> 
+    </TouchableOpacity> 
   </View>
 );
 

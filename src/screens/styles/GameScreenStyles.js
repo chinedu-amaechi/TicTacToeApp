@@ -6,46 +6,38 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5F5DC', // Light beige background color
+    backgroundColor: '#f0f0f0',
   },
   title: {
-    fontSize: 32,
+    fontSize: 28,
     fontWeight: 'bold',
     marginBottom: 20,
-    color: '#333',
   },
   players: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    width: '20%', // Adjusted width to bring PlayerO and PlayerX closer
+    width: '50%',
     marginTop: 20,
   },
-  playerX: {
+  player: {
     fontSize: 24,
+    color: '#888',
     fontWeight: 'bold',
-    color: '#FFD700', // Yellow X
-    backgroundColor: '#333',
-    padding: 10,
-    borderRadius: 5,
   },
-  playerO: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#FF69B4', // Pink O
-    backgroundColor: '#333',
-    padding: 10,
-    borderRadius: 5,
+  activePlayer: {
+    color: '#000',
+    textDecorationLine: 'underline',
   },
   restartButton: {
-    backgroundColor: '#333',
-    paddingVertical: 15,
-    paddingHorizontal: 30,
+    backgroundColor: '#365',
+    paddingVertical: 12,
+    paddingHorizontal: 25,
     borderRadius: 10,
     marginTop: 20,
   },
   buttonText: {
     color: '#fff',
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: 'bold',
   },
 });

@@ -9,10 +9,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5F5DC', // Light beige background color
   },
   logo: {
-    width: 300, // Twice the original width
-    height: 300, // Twice the original height
-    marginBottom: 30, // Move the logo up a bit
-    marginTop: -100, // Adjust if needed
+    width: 300,
+    height: 300,
+    marginBottom: 30,
+    marginTop: -100,
   },
   startButton: {
     backgroundColor: '#365',
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: '#fff',
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 'bold',
   },
   cornerLogo: {
