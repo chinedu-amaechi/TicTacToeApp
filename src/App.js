@@ -43,7 +43,7 @@ const App = () => {
         <Stack.Screen 
           name="Win" 
           component={WinScreen} 
-          options={{ title: 'Winner!' }} 
+          options={{ title: 'Winner' }} 
         />
         <Stack.Screen 
           name="Draw" 

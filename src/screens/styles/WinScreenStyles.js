@@ -9,6 +9,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5F5DC',
   },
  
+  topSection: {
+    flex: 2,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
   trophy: { 
     width: 150,
     height: 150,
@@ -16,10 +22,24 @@ const styles = StyleSheet.create({
   },
   
   title: {
-    fontSize: 24,
+    fontSize: 28,
     fontWeight: 'bold',
-    marginBottom: 20,
+    marginBottom: 2,
     color: '#333',
+  },
+
+  subTitle: {
+    fontSize: 22,
+    color: '#000', // Black text
+    marginTop: 2,
+  },
+
+  bottomSection: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+    paddingBottom: 20, // Space from bottom
   },
 
   button: {
@@ -27,6 +47,7 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
     paddingHorizontal: 30,
     borderRadius: 10,
+    marginTop: 20,
   },
 
   buttonText: {
