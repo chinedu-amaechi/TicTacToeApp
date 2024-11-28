@@ -1,7 +1,7 @@
-// src/components/Board.js
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View } from 'react-native';
 import Square from './Square';
+import styles from './styles/BoardStyles';
 
 const Board = ({ squares, onClick }) => (
   <View style={styles.board}>
@@ -10,14 +10,5 @@ const Board = ({ squares, onClick }) => (
     ))}
   </View>
 );
-
-const styles = StyleSheet.create({
-  board: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    width: 300,
-    height: 300,
-  },
-});
 
 export default Board;
