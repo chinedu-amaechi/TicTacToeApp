@@ -6,38 +6,55 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#F5F5DC',
   },
+
   title: {
     fontSize: 28,
     fontWeight: 'bold',
     marginBottom: 20,
   },
-  players: {
+
+  playersContainer: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     width: '50%',
+    marginBottom: 20,
     marginTop: 20,
   },
-  player: {
-    fontSize: 24,
-    color: '#888',
-    fontWeight: 'bold',
+
+  playerButton: {
+    flex: 1,
+    paddingVertical: 15,
+    marginHorizontal: 20,
+    borderRadius: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 2,
   },
   activePlayer: {
-    color: '#000',
-    textDecorationLine: 'underline',
+    backgroundColor: '#4CAF50', // Green for active player
+    borderColor: '#2E7D32', // Dark green border for active player
+  },
+  inactivePlayer: {
+    backgroundColor: '#D3D3D3', // Gray for inactive player
+    borderColor: '#A9A9A9', // Dark gray border for inactive player
+  },
+  playerText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#FFFFFF',
   },
   restartButton: {
+    marginTop: 30,
     backgroundColor: '#365',
-    paddingVertical: 12,
-    paddingHorizontal: 25,
+    paddingVertical: 15,
+    paddingHorizontal: 30,
     borderRadius: 10,
-    marginTop: 20,
   },
   buttonText: {
-    color: '#fff',
-    fontSize: 16,
+    color: '#FFFFFF',
+    fontSize: 18,
     fontWeight: 'bold',
   },
 });

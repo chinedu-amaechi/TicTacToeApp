@@ -49,10 +49,23 @@ const GameScreen = ({ route, navigation }) => {
     <View style={styles.container}>
       <Text style={styles.title}>Tic-Tac-Toe</Text>
       <Board squares={current} onClick={handleClick} />
-      <View style={styles.players}>
-        <Text style={[styles.player, xIsNext && styles.activePlayer]}>X</Text>
-        <Text style={[styles.player, !xIsNext && styles.activePlayer]}>O</Text>
+      
+      <View style={styles.playersContainer}>
+        <TouchableOpacity 
+          style={[styles.playerButton, xIsNext ? styles.activePlayer : styles.inactivePlayer]} 
+          onPress={() => {}}
+        >
+          <Text style={styles.playerText}>X</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity 
+          style={[styles.playerButton, !xIsNext ? styles.activePlayer : styles.inactivePlayer]} 
+          onPress={() => {}}
+        >
+          <Text style={styles.playerText}>O</Text>
+        </TouchableOpacity>
       </View>
+
       <TouchableOpacity style={styles.restartButton} onPress={restartGame}>
         <Text style={styles.buttonText}>Restart Game</Text>
       </TouchableOpacity>
