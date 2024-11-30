@@ -3,17 +3,18 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   square: {
-    width: '33.33%',
-    height: '33.33%',
-    backgroundColor: '#fff',
-    borderWidth: 1,
-    borderColor: '#333',
-    alignItems: 'center',
+    width: 100,
+    height: 100,
     justifyContent: 'center',
+    alignItems: 'center',
+    borderColor: '#F5F5DC',
+    borderWidth: 5,
+    backgroundColor: '#FFF',
   },
+
   value: {
-    fontSize: 48,
-    fontWeight: 'bold', 
+    fontSize: 50,
+    fontWeight: 'bold',
   },
 });
 

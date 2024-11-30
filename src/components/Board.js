@@ -6,8 +6,11 @@ import styles from './styles/BoardStyles';
 
 const Board = ({ squares, onClick }) => (
   <View style={styles.board}>
-    {squares.map((square, i) => (
-      <Square key={i} value={square} onClick={() => onClick(i)} />
+    {squares.map((square, index) => (
+      <Square
+        key={index} 
+        value={square}
+        onClick={() => onClick(index)} />
     ))}
   </View>
 );

@@ -6,8 +6,13 @@ const styles = StyleSheet.create({
   board: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    width: 300,
-    height: 300,
+    width: 300, // Set board width
+    height: 300, // Set board height
+    
+  },
+  
+  row: {
+    flexDirection: 'row',
   },
 });
 
