@@ -2,11 +2,14 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { Button } from 'react-native';
 import HomeScreen from './screens/HomeScreen';
 import SelectPlayerScreen from './screens/SelectPlayerScreen';
 import GameScreen from './screens/GameScreen';
 import WinScreen from './screens/WinScreen';
 import DrawScreen from './screens/DrawScreen';
+import ExitButton from './components/ExitButton'; 
+
 
 const Stack = createStackNavigator();
 
@@ -37,8 +40,14 @@ const App = () => {
         />
         <Stack.Screen 
           name="Game" 
-          component={GameScreen} 
-          options={{ title: 'Game' }} 
+          component={GameScreen}
+          options={({ navigation }) => ({
+            title: 'Game',
+            headerRight: () => (
+              <ExitButton
+                onPress={() => navigation.navigate('Home')} />
+            ),
+          })}
         />
         <Stack.Screen 
           name="Win" 
