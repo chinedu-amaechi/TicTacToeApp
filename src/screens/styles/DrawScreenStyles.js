@@ -10,15 +10,15 @@ const styles = StyleSheet.create({
 
   },
   logo: {
-    width: 150,
-    height: 150,
-    marginBottom: 20,
+    width: 250,
+    height: 250,
   },
 
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 20,
+    marginBottom: 100,
+    
     color: '#333',
   },
 
@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
     paddingHorizontal: 30,
     borderRadius: 10,
+    marginTop: 100,
   },
 
   buttonText: {
